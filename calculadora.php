@@ -1,10 +1,18 @@
-
 <html>
 <title> </title>
 <head>
 </head>
 <?php 
- 
+ /**
+  * @author DAW-JDMC
+  * @version visual-Studio-Code 1.63
+  * @param integer $Numero1 recoge el valor 1
+  * @param integer $Numero2 recoge el valor 2
+  * @param integer $suma resultado de sumar los valores
+  * @param integer $resta resultado de restar los valores
+  * @param integer $mult resultado de multiplicar los valores
+  * @param integer $div resultado de dividir los valores
+  */
  
 $Numero1=$_REQUEST['n1'];
 $Numero2=$_REQUEST['n2'];

@@ -2,11 +2,24 @@ package repaso;
 
 import static java.lang.System.exit;
 import java.util.Scanner;
-
-import javax.sound.sampled.SourceDataLine;
-
+/**
+ * 
+ * @author DAW-JDMC
+ * @version 8.2
+ */
 public class Calculadora {
+    /**
+     * @param args 
+     * @param num recoge la accion de la calculadora
+     * @param num1 recoge el primer numero
+     * @param num2 recoge el segundo numero
+     * @param suma la suma de los valores
+     * @param resta la resta de los valores
+     * @param multi la multiplicacion de los valores
+     * @param dividir la division de los valores
+     */
     public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
         int num;
         System.out.println("Introduce que acion quieres realizar");
@@ -16,30 +29,31 @@ public class Calculadora {
         System.out.println("4 - Dividir.");
 
         num = sc.nextInt();
-
+        int num1;
+        int num2;
         switch (num) {
             case 1:
                 System.out.println("Introduce los valores que quieres sumar:");
-                int Sum1 = sc.nextInt();
-                int Sum2 = sc.nextInt();
-                int suma = Sum1 + Sum2;
+                num1 = sc.nextInt();
+                num2 = sc.nextInt();
+                int suma = num1 + num2;
 
                 System.out.println("El resultado es: " + suma);
                 break;
 
             case 2:
                 System.out.println("Introduce los valores que quieres restar:");
-                int res1 = sc.nextInt();
-                int res2 = sc.nextInt();
-                int resta = res1 - res2;
+                 num1 = sc.nextInt();
+                 num2 = sc.nextInt();
+                int resta = num1 - num2;
 
                 System.out.println("El resultado es: " + resta);
                 break;
 
             case 3:
                 System.out.println("Introduce los valores que quieres multiplicar:");
-                int num1 = sc.nextInt();
-                int num2 = sc.nextInt();
+                 num1 = sc.nextInt();
+                 num2 = sc.nextInt();
                 int multi = num1 * num2;
 
                 System.out.println("El resultado es: " + multi);
@@ -47,12 +61,12 @@ public class Calculadora {
 
             case 4:
                 System.out.println("Introduce el dividendo:");
-                int div1 = sc.nextInt();
+                 num1 = sc.nextInt();
                 System.out.println("Introduce el divisor:");
-                int div2 = sc.nextInt();
+                 num2 = sc.nextInt();
 
-                if(div2 > 0){
-                    int dividir = div1/div2;
+                if(num2 > 0){
+                    int dividir = num1/num2;
                     System.out.println("El resultado es: " +dividir);
                 }else{
                     System.out.println("Error!!!, el divisor tiene que ser mayor que 0.");
